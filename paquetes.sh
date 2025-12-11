@@ -6,6 +6,7 @@ sudo pacman -Syy
 # Instalar todos los paquetes necesarios para la configuración de Hyperland
 sudo pacman -S --needed \
   waybar \
+  lolcat \
   adobe-source-code-pro-fonts \
   noto-fonts-emoji \
   otf-font-awesome \
