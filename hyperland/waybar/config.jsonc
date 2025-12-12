@@ -6,8 +6,8 @@
     
     "modules-left": [
         "custom/launcher",
-        "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/workspaces"
+        //"hyprland/window"
     ],
     "modules-center": [
         "clock"
@@ -16,19 +16,17 @@
         "custom/updates",
         "custom/disk",
         "custom/temperature",
-
         "cpu",
         "memory",
         "pulseaudio",
         "network",
         "battery",
-        "tray",
-        "custom/power"
+        "tray"
     ],
 
     // Módulos de configuración
     "custom/launcher": {
-        "format": "",
+        "format": " ",
         "tooltip": false,
         "on-click": "wofi --show drun"
     },
@@ -48,6 +46,7 @@
     },
 
     "clock": {
+        "interval": 60,
         "format": "{:%H:%M}",
         "format-alt": "{:%A, %B %d, %Y (%H:%M:%S)}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -100,16 +99,20 @@
     }
   },
 
-"cpu": {
-    "interval": 2,
-    "format": " {usage}% {icon}",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    "tooltip": false,
-    "states": {
-        "warning": 70,
-        "critical": 90
-    }
-},
+//"cpu": {
+//    "interval": 2,
+//    "format": " {usage}% {icon}",
+//    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+//    "tooltip": false,
+//    "states": {
+//        "warning": 70,
+//        "critical": 90
+//    }
+//},
+    "cpu": {
+        "format": "<span color='#89b4fa'> </span>{usage}%",
+        "states": { "warning": 70, "critical": 90 }
+    },
 
 "memory": {
     "interval": 2,
