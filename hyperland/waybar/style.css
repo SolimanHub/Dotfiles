@@ -8,7 +8,7 @@
     border: none;
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
-    font-size: 13px;
+    font-size: 10px; /* Reducido de 13px a 9px (~31% menos) */
     font-weight: bold;
     min-height: 0;
     padding: 0;
@@ -24,10 +24,10 @@ window#waybar {
 
 /* Launcher – Launcher (logo Arch) */
 #custom-launcher {
-    font-size: 18px;
+    font-size: 14px; /* Reducido proporcionalmente de 18px */
     color: #000000;
     background: linear-gradient(135deg, #89b4fa, #00ddff);
-    padding: 0 16px;
+    padding: 0 12px; /* Padding ligeramente reducido */
     margin: 4px 8px 4px 8px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(137, 180, 250, 0.6);
@@ -46,7 +46,7 @@ window#waybar {
 }
 
 #workspaces button {
-    padding: 0 10px;
+    padding: 0 8px; /* Padding reducido */
     color: #89b4fa;
     margin: 0 2px;
 }
@@ -72,12 +72,11 @@ window#waybar {
 #window {
     font-style: italic;
     color: #bd93f9;
-    padding: 0 16px;
+    padding: 0 12px; /* Padding reducido */
     margin: 4px 0;
     background: rgba(189, 147, 249, 0.15);
     border-radius: 0 12px 12px 0;
 }
-
 
 /* – Módulos de la derecha (todos con el mismo estilo) */
 #custom-updates,
@@ -92,7 +91,7 @@ window#waybar {
 #tray {
     background: rgba(30, 30, 46, 0.7);
     color: #cdd6f4;
-    padding: 0 12px;
+    padding: 0 10px; /* Padding reducido de 12px a 10px */
     margin: 4px 4px;
     border-radius: 10px;
     border: 1px solid rgba(137, 180, 250, 0.3);
@@ -102,11 +101,11 @@ window#waybar {
 #clock {
     color: #ffffff;
     background: linear-gradient(90deg, rgba(137,180,250,0.3), rgba(0,221,255,0.3));
-    padding: 0 20px;
+    padding: 0 16px; /* Reducido de 20px a 16px */
     margin: 4px 10px;
     border-radius: 12px;
     border: 1px solid #00ddff;
-    font-size: 14px;
+    font-size: 10px; /* Reducido proporcionalmente de 14px */
     box-shadow: 0 0 15px rgba(0, 221, 255, 0.4);
 }
 
@@ -146,10 +145,10 @@ window#waybar {
 
 /* – Botón de apagado */
 #custom-power {
-    font-size: 16px;
+    font-size: 12px; /* Reducido de 16px a 12px */
     color: #ffffff;
     background: linear-gradient(135deg, #ff5555, #ff79c6);
-    padding: 0 16px;
+    padding: 0 12px; /* Reducido de 16px a 12px */
     margin: 4px 8px 4px 4px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255, 85, 85, 0.6);
@@ -177,4 +176,5 @@ tooltip {
 
 tooltip label {
     color: #89b4fa;
+    font-size: 9px; /* También reducido para mantener consistencia */
 }
