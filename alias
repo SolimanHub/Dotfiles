@@ -10,6 +10,7 @@ alias ls='ls --group-directories-first --color=auto'
 alias xclip='xclip -selection clipboard'
 alias rmd='rm -rfv'
 alias waybar-r='killall -SIGUSR2 waybar'
+alias initesp='source ~/Cocina/esp32/esp-idf/export.sh'
 
 alias v='nvim -p'
 alias sv='sudo nvim -p'
